@@ -1,0 +1,11 @@
+How Do LLMs Work? The Transformer Architecture
+
+LLMs are built on the Transformer architecture, introduced by Google researchers in a 2017 paper titled "Attention is All You Need." The key innovation was the attention mechanism, which allows the model to weigh the importance of every word relative to every other word when generating output.
+
+Training an LLM happens in two main stages:
+1. Pre-training: The model reads hundreds of billions of words from the internet, books, and code. It learns to predict the next word in a sequence. Through this process it learns grammar, facts, reasoning, and coding skills.
+2. Fine-tuning: After pre-training, the model is further trained on curated examples of good conversations to make it helpful and safe. This stage is called RLHF — Reinforcement Learning from Human Feedback.
+
+LLMs generate text by predicting the next token (word piece) one at a time. Given a prompt, the model calculates probabilities for every possible next token and samples from them.
+
+The temperature parameter controls randomness. A temperature of 0 makes outputs fully deterministic (always the highest-probability token). Higher temperatures introduce creativity and variety.

@@ -1,0 +1,20 @@
+Tokens and Context Windows in LLMs
+
+A token is the basic unit of text that an LLM processes. Tokens are not exactly words — they are word pieces produced by a tokeniser. Common short words are usually one token, but longer or rare words may be split into multiple tokens. For example, "hello" is 1 token, and "unbelievable" might split into "un", "believ", "able" — 3 tokens.
+
+A useful rule of thumb: 1 token is approximately 0.75 words in English, or about 4 characters. The sentence "Large language models process text as tokens" contains roughly 8 tokens.
+
+Why tokens matter for developers:
+- LLM APIs charge per token (input tokens + output tokens)
+- Context window limits are measured in tokens, not words
+- Longer prompts cost more and take more time to process
+
+The context window is the maximum number of tokens an LLM can process in one request — the prompt plus the response combined. Text beyond the context window is simply cut off and the model cannot see it.
+
+Context window sizes by model:
+- GPT-3.5: 16,000 tokens (roughly 12,000 words)
+- GPT-4: 128,000 tokens (roughly 96,000 words)
+- Claude 3: 200,000 tokens (roughly 150,000 words)
+- LLaMA 3.2: 128,000 tokens
+
+The attention mechanism in Transformers runs in O(n squared) time relative to the number of tokens, which is why very large context windows are computationally expensive to process.

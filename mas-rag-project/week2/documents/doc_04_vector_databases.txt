@@ -1,0 +1,17 @@
+Vector Databases and Embeddings
+
+A vector database is a specialised database that stores and searches data as high-dimensional numerical vectors called embeddings. Unlike traditional databases that search for exact keyword matches, vector databases find semantically similar content even when the exact words differ.
+
+An embedding is a list of numbers (a vector) that represents the meaning of a piece of text. For example, the sentences "The dog ran fast" and "The canine sprinted quickly" would have very similar embeddings even though they share no words, because they mean the same thing.
+
+Embeddings are created by embedding models — smaller neural networks trained specifically to convert text into vectors. Popular embedding models include OpenAI text-embedding-ada-002 and Sentence Transformers.
+
+To search a vector database, the query is converted to an embedding, and then the stored vectors closest to it are found using a distance metric called cosine similarity. Closer vectors mean more semantically relevant documents.
+
+Popular vector databases include:
+- ChromaDB: Open-source, runs locally, perfect for learning and small projects
+- Pinecone: Cloud-hosted, highly scalable for production systems
+- FAISS: Facebook's library, very fast for large datasets
+- Weaviate: Open-source with many integrations
+
+In a RAG system, the vector database acts as the searchable memory that stores all documents.

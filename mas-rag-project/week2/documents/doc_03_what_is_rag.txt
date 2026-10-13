@@ -1,0 +1,15 @@
+What is Retrieval-Augmented Generation (RAG)?
+
+Retrieval-Augmented Generation (RAG) is a technique that improves LLM responses by first searching a knowledge base for relevant documents, then using those documents to generate a grounded answer.
+
+The problem RAG solves: LLMs have a training cutoff date and can hallucinate — making up facts — because they rely on what they memorised during training. RAG fixes this by giving the LLM access to real, current documents at query time.
+
+How RAG works in four steps:
+1. Index: Documents are converted into vector embeddings and stored in a vector database.
+2. Retrieve: When a user asks a question, the question is also converted to an embedding and the most similar document chunks are retrieved.
+3. Augment: The retrieved documents are added to the LLM prompt as context.
+4. Generate: The LLM reads the context and writes an answer based on those real documents.
+
+RAG was introduced in a 2020 paper by Facebook AI titled "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks."
+
+The main advantage of RAG over fine-tuning is that the knowledge base can be updated without retraining the model — just add new documents to the database.

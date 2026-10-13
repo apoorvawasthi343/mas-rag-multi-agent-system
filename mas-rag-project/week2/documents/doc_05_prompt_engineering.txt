@@ -1,0 +1,17 @@
+Prompt Engineering: Getting the Best from LLMs
+
+Prompt engineering is the practice of carefully designing inputs (prompts) to get better, more accurate, and more useful outputs from LLMs. It is one of the most important practical skills for working with AI systems.
+
+Key prompt engineering techniques:
+
+1. Role prompting: Tell the model what role to play. Example: "You are an expert Python developer. Review this code and find bugs." Giving the LLM a specific role improves consistency and quality.
+
+2. Few-shot prompting: Provide 2-3 examples of the desired input-output format before your actual question. This teaches the model exactly what style or structure you want without any fine-tuning.
+
+3. Chain-of-thought prompting: Add "Let's think step by step" to encourage the model to reason through a problem before giving a final answer. This dramatically improves performance on math and logic tasks.
+
+4. System prompts: In chat-based models, the system prompt sets overall context and constraints. Example: "You are a customer service agent. Only answer questions about our products. Be polite and concise."
+
+5. Constrained output: Ask for responses in a specific format — JSON, bullet points, or numbered lists — to make outputs easier to process programmatically.
+
+The core principle: LLMs are very sensitive to exact wording. Small changes to a prompt can dramatically change the output. Clear, specific, and contextual prompts consistently outperform vague ones.

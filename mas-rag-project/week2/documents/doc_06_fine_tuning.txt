@@ -1,0 +1,19 @@
+Fine-Tuning Large Language Models
+
+Fine-tuning is the process of further training a pre-trained LLM on a smaller, task-specific dataset to improve its performance on a particular domain or task.
+
+Why fine-tune instead of just using prompts?
+- Consistency: Fine-tuned models reliably follow a specific format or tone
+- Efficiency: They achieve the same results with shorter prompts, saving cost
+- Domain expertise: Fine-tuning on medical, legal, or technical data improves accuracy in those fields
+- Privacy: You can train on private data without sending it to an external API
+
+Types of fine-tuning:
+1. Full fine-tuning: All model parameters are updated. Most powerful but requires enormous compute resources.
+2. LoRA (Low-Rank Adaptation): Only a small set of additional parameters are trained alongside the frozen base model. Much cheaper and nearly as effective. This is currently the most popular method.
+3. RLHF (Reinforcement Learning from Human Feedback): The model is fine-tuned using human ratings of its outputs to make it helpful and safe. OpenAI used RLHF to create ChatGPT.
+
+Fine-tuning vs RAG — when to use each:
+- Use RAG when you need up-to-date or frequently changing information
+- Use fine-tuning when you need to change the model's behaviour, style, or persona
+- Many production systems combine both: fine-tune for behaviour, RAG for knowledge

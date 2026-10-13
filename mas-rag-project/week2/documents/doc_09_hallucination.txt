@@ -1,0 +1,20 @@
+Hallucination in LLMs: What It Is and How to Fix It
+
+Hallucination refers to when an LLM generates information that sounds confident and plausible but is factually wrong or entirely made up. It is one of the most critical challenges in deploying LLMs in real-world applications.
+
+Why do LLMs hallucinate?
+LLMs are trained to predict the next most likely token — not to verify facts. They learn statistical patterns in language, not a ground-truth model of the world. When asked about topics with limited training data, they fill gaps with plausible-sounding but incorrect information.
+
+Types of hallucination:
+1. Factual hallucination: Making up facts, statistics, dates, or citations — for example, inventing a research paper that does not exist.
+2. Reasoning hallucination: Logical errors where the conclusion does not follow from the premises.
+3. Context hallucination: Ignoring information provided in the prompt and answering from training memory instead.
+
+How to reduce hallucination:
+1. RAG: Ground the model in real retrieved documents so it answers from facts, not memory
+2. Lower temperature: Reduces random, creative but inaccurate responses
+3. Ask for citations: Prompting the model to cite its sources exposes unsupported claims
+4. Verification agents: Use a second LLM to fact-check the first LLM's output
+5. Constrained prompting: Instruct the model to say "I don't know" when it lacks information
+
+Hallucination rates vary across models. GPT-4 and Claude hallucinate less than smaller models, but no LLM is completely hallucination-free today.

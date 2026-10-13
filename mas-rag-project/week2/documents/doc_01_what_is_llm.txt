@@ -1,0 +1,9 @@
+What is a Large Language Model (LLM)?
+
+A Large Language Model (LLM) is a type of artificial intelligence system trained on massive amounts of text data to understand and generate human language. LLMs are built using deep learning, specifically a neural network architecture called the Transformer.
+
+LLMs are called "large" because they have billions of parameters — numerical values the model learns during training. For example, GPT-3 has 175 billion parameters, and GPT-4 is estimated to have over 1 trillion parameters.
+
+LLMs can perform many tasks without being specifically trained for each one: answering questions, writing essays, summarising text, translating languages, writing code, and solving math problems. This ability to handle diverse tasks from general training is called emergent behaviour.
+
+The most well-known LLMs include OpenAI's GPT-4, Anthropic's Claude, Google's Gemini, and Meta's LLaMA. These models power products like ChatGPT, Claude.ai, and Google Gemini.

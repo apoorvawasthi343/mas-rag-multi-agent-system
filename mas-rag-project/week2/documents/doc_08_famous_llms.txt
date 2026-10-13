@@ -1,0 +1,13 @@
+Famous Large Language Models and Who Made Them
+
+GPT-4 (OpenAI, 2023): OpenAI's flagship model, powering ChatGPT Plus. GPT-4 is multimodal — it accepts both text and images as input. It scored in the top 10 percent on the bar exam and performs at a human level on many professional benchmarks.
+
+Claude (Anthropic, 2023-2024): Developed by Anthropic with a focus on safety and honesty. Claude 3 has a context window of up to 200,000 tokens, allowing it to process book-length documents in one request. The main variants are Opus (most powerful), Sonnet (balanced), and Haiku (fastest).
+
+Gemini (Google DeepMind, 2023): Google's multimodal LLM, integrated into Search, Gmail, and Workspace. Gemini Ultra is the most powerful variant, while Gemini Nano runs on mobile devices on-device.
+
+LLaMA (Meta AI, 2023-2024): Meta's open-source LLM family. LLaMA 3.2 can be downloaded and run locally on consumer hardware using tools like Ollama. Available in 1B, 3B, 11B, and 90B parameter variants. Because it is open-source, it is widely used in research.
+
+Mistral (Mistral AI, 2023): A French AI company's open-source models known for efficiency. Mistral 7B outperforms LLaMA 2 13B on many benchmarks despite being smaller.
+
+Qwen (Alibaba, 2023-2024): Alibaba's open-source LLM family with strong performance in both English and Chinese, and notable coding and math capabilities.

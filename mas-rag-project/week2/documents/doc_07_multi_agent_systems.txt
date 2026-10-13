@@ -1,0 +1,21 @@
+Multi-Agent AI Systems
+
+A multi-agent system (MAS) is an AI architecture where multiple LLM agents work together, each with a specific role, to complete tasks that are too complex for a single agent.
+
+Each agent in a MAS typically has:
+- A role: defined by its system prompt (e.g., Researcher, Coder, Reviewer, Supervisor)
+- Tools: access to search engines, code executors, databases, or APIs
+- Memory: context from previous messages in the conversation
+- Communication: the ability to send and receive messages from other agents
+
+Communication topologies define how agents are connected:
+- Chain: Agents work in a strict sequence, each passing results to the next
+- Hub: A central coordinator sends tasks to specialist agents and combines their results
+- Mesh: All agents can communicate directly with all other agents
+- Hierarchy: Agents are organised in a tree structure with managers and workers
+
+Popular multi-agent frameworks include LangGraph, CrewAI, AutoGen, and MetaGPT.
+
+The key advantage of multi-agent systems is specialisation. Just as human teams perform better when each person focuses on their expertise, AI teams perform better when each agent has a specific role.
+
+Security is an important concern in MAS. Because agents communicate by passing messages, a compromised or tampered message can propagate errors through the entire system — a single corrupted channel can affect the final output.
